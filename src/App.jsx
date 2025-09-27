@@ -15,25 +15,25 @@ function App() {
 
   useEffect(() => {
     // contact_info
-    fetch('/api/contact_info')
+    fetch('https://ntquang.infinityfreeapp.com/api/contact_info')
       .then(res => res.json())
       .then(data => setContactInfo(data))
       .catch(() => setContactInfo(null));
 
     // experience (nhiều dòng)
-    fetch('/api/experience')
+    fetch('https://ntquang.infinityfreeapp.com/api/experience')
       .then(res => res.json())
       .then(data => setExperience(data))
       .catch(() => setExperience([]));
 
     // education (1 dòng cuối)
-    fetch('/api/education')
+    fetch('https://ntquang.infinityfreeapp.com/api/education')
       .then(res => res.json())
       .then(data => setEducation(data))
       .catch(() => setEducation(null));
 
     // skills (nhiều dòng)
-    fetch('/api/skill')
+    fetch('https://ntquang.infinityfreeapp.com/api/skill')
       .then(res => res.json())
       .then(data => setSkills(data))
       .catch(() => setSkills([]));
